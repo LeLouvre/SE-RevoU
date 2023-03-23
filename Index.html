@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kalkulator BMI</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit reiciendis ut debitis nulla eveniet corporis assumenda veritatis velit, modi quae. Laboriosam sint in, tempora facere nisi iste consectetur labore saepe!</p>
+    <div class="latar">
+        <form id="submitForm">
+            <div class="form-jenis-kelamin">
+                <strong>Jenis Kelamin</strong><br>
+                <div class="jenis-kelamin">
+                    <input type="radio" name="jenis-kelamin" value="pria" required="true">
+                    <label for="pria">Pria</label><br>
+                    <input type="radio" name="jenis-kelamin" value="wanita" required="true">
+                    <label for="wanita">Wanita</label><br>
+                </div>        
+            </div>
+            <div class="form-input">
+                <strong>Berat Badan (kg)</strong>
+                <div class="data" >
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="number" id="berat-badan" required="true">
+                </div>
+                <strong>Usia (tahun)</strong>
+                <div class="data">
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="number" id="usia" required="true">
+                </div>
+                <strong>Tinggi Badan (M)</strong>
+                <div class="data" >
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="number" id="tinggi-badan" required="true">
+                </div>
+                <!-- <input type="number" class="icon">
+                <div style="border: 1px solid #DDD;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/pencil-1745955-1479691.png?f=avif&w=256"/>
+                    <input style="border: none;"/>
+                </div>
+                <div id="input-container">
+                    <div class="gambar">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/pencil-1745955-1479691.png?f=avif&w=256"/>
+                    </div>
+                    <input style="border: none;"/>
+                </div>
+                <div class="box-data">
+                    <div class="box" id="img">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/pencil-1745955-1479691.png?f=avif&w=256"/>
+                    </div>
+                    <div class="box" id="input">
+                        <input type="number" style="border: none;"/>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="button-group">
+                <button onclick="submitData()" class="button" id="hitung" type="submit">Hitung BMI</button>
+                <button class="button" id="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <h2>Kalkulator BMI</h2>
+    <ol type="1">
+        <li>Menghitung berat badan</li>
+        <li>Menentukan kategori berat badan ideal atau tidak</li>
+        <li>Mempersiapkan program penurunan berat badan</li>
+    </ol>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit reiciendis ut debitis nulla eveniet corporis assumenda veritatis velit, modi quae. Laboriosam sint in, tempora facere nisi iste consectetur labore saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit reiciendis ut debitis nulla eveniet corporis assumenda veritatis velit, modi quae. Laboriosam sint in, tempora facere nisi iste consectetur labore saepe!</p>
+
+    <h1>Hasil</h1>
+    <div class="latar">
+        <h2 id="KetBBatas"></h2>
+        <p id="BMI"></p>
+        <p id="KetBBbawah"></p>
+        <button class="button" value="DownloadBMI">Download Hasil BMI</button>
+    </div>
+    <p id="weight-range"></p>
+    <p id="advice"></p>
+    
+    <button class="button" id="Konsul">Konsultasi Ahli Gizi Via Aplikasi</button>
+    <button class="button" id="Regis">Registrasi Online Ahli Gizi</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe itaque voluptate vitae vero perferendis nulla, architecto, possimus reiciendis dolores obcaecati vel excepturi est nesciunt fugiat molestiae at atque sequi corporis.</p>
+
+    <div class="latar">
+        <h2 id="kelas-berat"></h2>
+        <p class="penyakit"></p>
+    </div>
+
+</body>
+</html> 
