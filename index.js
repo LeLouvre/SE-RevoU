@@ -11,13 +11,13 @@ function submitData(){
     let usia = document.getElementById("usia").value;
     let tinggiBadan = document.getElementById("tinggi-badan").value;
     BMI = beratBadan/(tinggiBadan*tinggiBadan);
-    let nilaiBMI = BMI.toFixed(1);
 
+    let nilaiBMI = BMI.toFixed(1);
     // document.getElementById("BMI").innerHTML = nilaiBMI;
     console.log(nilaiBMI);
 
 
-    if(nilaiBMI<=18.5){
+   if(nilaiBMI<=18.5){
         document.getElementById("KetBBatas").innerHTML = "Berat Badan Kurang";
         document.getElementById("BMI").innerHTML = nilaiBMI;
         document.getElementById("KetBBbawah").innerHTML = "Berat Badan Anda Tergolong Kurang";
